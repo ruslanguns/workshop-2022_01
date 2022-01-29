@@ -6,7 +6,8 @@ async function seed() {
   const result = await prisma.user.create({
     data: {
       title: 'Mi primer imagen',
-      imageId: '/image.jpg',
+      imageUrl: '/image.jpg',
+      description: 'Eiusmod velit aute dolore anim pariatur nisi.',
     },
   });
 
