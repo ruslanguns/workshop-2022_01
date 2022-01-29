@@ -13,4 +13,8 @@ export class GalleryService {
   getMany() {
     return this.dataService.user.findMany();
   }
+
+  getById(id: string) {
+    return this.dataService.user.findUnique({ where: { id } });
+  }
 }
