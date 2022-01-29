@@ -9,4 +9,8 @@ export class GalleryService {
   addItem(data: CreateGalleryItem) {
     return this.dataService.user.create({ data });
   }
+
+  getMany() {
+    return this.dataService.user.findMany();
+  }
 }
